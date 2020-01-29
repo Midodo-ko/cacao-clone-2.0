@@ -10,7 +10,7 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <title>더보기 | Kakao Clone</title>
+    <title>친구 | Kakao Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -27,99 +27,82 @@
     </div>
     <header class="header">
       <div class="header__header-column">
-        <h1 class="header__title">더보기</h1>
+        <h1 class="header__title">친구</h1>
       </div>
       <div class="header__header-column">
         <span class="header__icon">
           <i class="fas fa-search"></i>
         </span>
         <span class="header__icon">
-          <i class="fas fa-qrcode"></i>
+          <i class="fas fa-user"></i>
         </span>
         <span class="header__icon">
           <i class="fas fa-music"></i>
         </span>
         <span class="header__icon">
-          <a href="settings.html">
-            <i class="fas fa-cog"></i>
-          </a>
+          <i class="fas fa-cog"></i>
         </span>
       </div>
     </header>
-    <main class="more">
-      <header class="more__header">
+    <main class="friends">
+      <header class="friends__header">
+        <div class="friends__friend friend friend--large">
+          <div class="friend__column">
+            <img src="images/my_avatar.jpg" class="g-avatar friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                재환
+              </span>
+              <span class="firend__status">
+                프로필 매세지
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="friends__plus">
+        <h5 class="freinds__title">Plus friend</h5>
         <div class="friends__friend friend">
+          <div class="friend__column">
+            <img src="images/my_avatar.jpg" class="g-avatar friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">
+                Plus Friend
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="friends__list">
+        <h5 class="friends__title">Friends 85</h5>
+        <li class="friends__friend friend">
           <div class="freind__column">
             <img src="images/my_avatar.jpg" class="g-avatar friend__avatar" />
             <div class="friend__content">
               <span class="friend__name">
-                신재환
+                강영훈
               </span>
               <span class="firend__status">
-                qopwer89@gmail.com
+                친구의 프로필 매세지
               </span>
             </div>
           </div>
           <div class="friend__column">
-            <i class="far fa-comment-alt fa-2x"></i>
+            <div class="friend__now-listening">
+              <span>
+                포장마차 - 황인욱
+              </span>
+              <i class="fas fa-play"></i>
+            </div>
           </div>
-        </div>
-        <ul class="more__btn-list">
-          <li class="more__btn">
-            <span class="more__btn-icon">
-              <i class="far fa-smile fa-2x"></i>
-            </span>
-            <span class="more__btn-title">
-              이모티콘
-            </span>
-          </li>
-          <li class="more__btn">
-            <span class="more__btn-icon">
-              <i class="fas fa-utensils fa-2x"></i>
-            </span>
-            <span class="more__btn-title">
-              주문
-            </span>
-          </li>
-          <li class="more__btn">
-            <span class="more__btn-icon">
-              <i class="fas fa-th-large fa-2x"></i>
-            </span>
-            <span class="more__btn-title">
-              더보기
-            </span>
-          </li>
-        </ul>
-      </header>
-      <section class="more__suggestions">
-        <h5 class="more__title">suggestion</h5>
-        <ul class="more_suffestions-list">
-          <li class="more__suggestion suggestion">
-            <span class="suggestion__icon">
-              <i class="fas fa-quote-right fa-2x"></i>
-            </span>
-            <span class="suggestion__title">Kakao Story</span>
-          </li>
-          <li class="more__suggestion suggestion">
-            <span class="suggestion__icon">
-              <i class="fas fa-gamepad fa-2x"></i>
-            </span>
-            <span class="suggestion__title">Game</span>
-          </li>
-          <li class="more__suggestion suggestion">
-            <span class="suggestion__icon">
-              <i class="fas fa-store fa-2x"></i>
-            </span>
-            <span class="suggestion__title">쇼핑하기</span>
-          </li>
-        </ul>
-      </section>
+        </li>
+      </ul>
     </main>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__list-item">
           <a href="freinds.html" class="nav__list-link">
-            <i class="far fa-user"></i>
+            <i class="fas fa-user"></i>
           </a>
         </li>
         <li class="nav__list-item">
@@ -134,7 +117,7 @@
         </li>
         <li class="nav__list-item">
           <a href="more.html" class="nav__list-link">
-            <i class="fas fa-ellipsis-v"></i>
+            <i class="fas fa-ellipsis-h"></i>
           </a>
         </li>
       </ul>
