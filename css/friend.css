@@ -1,0 +1,54 @@
+.friend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*아래처럼 class 두개를 띄어서 사용하면(.A .B) A안에 있는 B에 적용*/
+.friend .friend__avatar {
+  width: 50px;
+  border-radius: 36%;
+}
+
+/*아래처럼 class 두개를 붙여서 사용하면(.A.B) 두개에 동시에 적용*/
+.friend__avatar.g-avatar {
+  width: 70px;
+}
+
+.friend__avatar.m-avatar {
+  width: 60px;
+}
+
+.friend .friend__column {
+  display: flex;
+  align-items: center;
+}
+
+.friend .friend__avatar {
+  margin-right: 15px;
+}
+
+.friend__content .friend__name {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.friend__content .friend__status,
+.friend__content .friend__bottom-text,
+.friend .chat__timestamp {
+  opacity: 0.6;
+}
+
+.friend__content .friend__bottom-text {
+  font-size: 14px;
+}
+
+.friend__content .friend__status,
+.friend .chat__timestamp {
+  font-size: 12px;
+}
+
+..friend .chat__timestamp {
+  margin-bottom: 3px;
+}
