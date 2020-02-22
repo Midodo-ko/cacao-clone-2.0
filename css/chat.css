@@ -73,20 +73,8 @@
 
 .message {
   display: flex;
-  align-items: center;
-}
-.incoming-message img {
-  width: 60px;
-  border-radius: 1.2em;
-  margin-right: 20px;
-}
-
-.incoming-message {
-  align-self: flex-start;
-}
-
-.sent-message {
-  align-self: flex-end;
+  align-items: flex-start;
+  margin-bottom: 20px;
 }
 
 .message .message__bubble {
@@ -95,4 +83,30 @@
     rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
   padding: 10px 20px;
   border-radius: 30px;
+}
+.incoming-message {
+  align-self: flex-start;
+}
+
+.incoming-message img {
+  width: 60px;
+  border-radius: 1.2em;
+  margin-right: 10px;
+}
+
+.incoming-message .message__bubble {
+  margin-top: 10px;
+  border-top-left-radius: 0px;
+}
+
+.incoming-message .message__author {
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 600;
+}
+.sent-message {
+  align-self: flex-end;
+}
+.sent-message .message__bubble {
+  border-top-right-radius: 0px;
 }
