@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>채팅창 | Kakao Clone</title>
-  </head>
-  <body class="chats-body">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>채팅창 | Kakao Clone</title>
+</head>
+<body class="chats-body">
+  <div class="header-wrapper">
     <div class="status-bar">
       <div class="status-bar__column">
         <i class="fas fa-underline"></i>
@@ -43,61 +41,54 @@
         </span>
       </div>
     </header>
-    <main class="chat-screen">
-      <ul class="chat__messages">
-        <span class="chat__timestamp">2020년 1월 2일 목요일</span>
-        <li class="incoming-message message">
-          <img src="images/avatar.jpg" class="g-avatar message__avatar" />
-          <div class="message__content">
-            <span class="message__author">친구</span>
-            <span class="message__bubble"
-              >친구의
-              채팅aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-          </div>
-          <span class="message__timestamp">오전 10:29</span>
-        </li>
-        <li class="sent-message message">
-          <span class="message__timestamp">오후 2:43</span>
-          <div class="message__content">
-            <span class="message__bubble">나의 채팅</span>
-          </div>
-        </li>
-        <li class="incoming-message message">
-          <img src="images/avatar.jpg" class="g-avatar message__avatar" />
-          <div class="message__content">
-            <span class="message__author">친구</span>
-            <span class="message__bubble"
-              >친구의
-              채팅aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-          </div>
-          <span class="message__timestamp">오전 10:29</span>
-        </li>
-        <li class="sent-message message">
-          <span class="message__timestamp">오후 2:43</span>
-          <div class="message__content">
-            <span class="message__bubble">나의 채팅aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-        </li>
-      </ul>
-    </main>
-    <div class="chat__write">
-      <div class="chat__write-column">
-        <i class="far fa-plus-square"></i>
-      </div>
-      <div class="chat__write-column">
-        <input
-          type="text"
-          placeholder="Send message"
-          class="chat__write-input"
-        />
-      </div>
-      <div class="chat__write-column">
-        <span class="chat__write-icon">
-          <i class="far fa-smile-wink"></i>
-        </span>
-        <span class="chat__write-icon">
-          <i class="fas fa-microphone"></i>
-        </span>
-      </div>
+  </div>
+  <main class="chat-screen">
+    <ul class="chat__messages">
+      <span class="chat__timestamp">2020년 1월 2일 목요일</span>
+      <li class="incoming-message message">
+        <img src="images/avatar.jpg" class="g-avatar message__avatar" />
+        <div class="message__content">
+          <span class="message__author">친구</span>
+          <span class="message__bubble">친구의 채팅</span>
+        </div>
+        <span class="message__timestamp">오전 10:29</span>
+      </li>
+      <li class="sent-message message">
+        <span class="message__timestamp">오후 2:43</span>
+        <div class="message__content">
+          <span class="message__bubble">나의 채팅</span>
+        </div>
+      </li>
+      <li class="incoming-message message">
+        <img src="images/avatar.jpg" class="g-avatar message__avatar" />
+        <div class="message__content">
+          <span class="message__author">친구</span>
+          <span class="message__bubble">친구의채팅</span>
+        </div>
+        <span class="message__timestamp">오전 10:29</span>
+      </li>
+      <li class="sent-message message">
+        <span class="message__timestamp">오후 2:43</span>
+        <div class="message__content">
+          <span class="message__bubble">나의 채팅</span>
+      </li>
+    </ul>
+  </main>
+  <div class="chat__write">
+    <div class="chat__write-column">
+      <i class="far fa-plus-square"></i>
     </div>
-  </body>
+    <div class="chat__write-column">
+      <input type="text" placeholder="Send message" class="chat__write-input" />
+    </div>
+    <div class="chat__write-column">
+      <span class="chat__write-icon">
+        <i class="far fa-smile-wink"></i>
+      </span>
+      <span class="chat__write-icon">
+        <i class="fas fa-microphone"></i>
+      </span>
+    </div>
+  </div>
+</body>
 </html>
