@@ -74,16 +74,13 @@
   transition: opacity 0.3s ease-in-out;
 }
 
+/* 
+아래의 (~)의 의미는 chat__write 클래스의 뒤에있는 모든 형제 선택자
+여기서는 chat__write클래스의 의 뒤에 나오는 모든 chat__icon 클래스를 지닌 선택자들에 적용되도록함.
+추가하여 (+)가 들어갈 경우 앞에 선언된 클래스의 바로 뒤에있는 chat__icon 하나에게만 적용이 된다
+*/
 .chat__write:focus ~ .chat__icon {
   opacity: 0;
-}
-
-.chat__write i {
-  font-size: 22px;
-}
-
-.chat__write-column:nth-child(2) {
-  width: 80%;
 }
 
 .chat-screen .chat__messages {
